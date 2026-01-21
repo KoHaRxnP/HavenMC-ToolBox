@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "HavenMC ToolBox",
+  "version": "1.0",
+  "description": "Your all-in-one portal for HavenMC. Check live players, skins, social updates, and community links in an instant.",
+  "author": "KoHaRxnP",
+  "icons": {
+    "16": "havenmc.png",
+    "48": "havenmc.png",
+    "128": "havenmc.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "havenmc.png",
+      "48": "havenmc.png",
+      "128": "havenmc.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "notifications"
+  ],
+  "host_permissions": [
+    "https://api.mcstatus.io/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "gssaid.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["havenmc.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
