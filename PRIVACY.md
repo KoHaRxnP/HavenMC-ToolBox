@@ -33,4 +33,4 @@ No personal data is collected or stored on any external database managed by the 
 If you have any questions about this Privacy Policy, please contact:
 
 * Developer: KoHaRxnP
-* [Your Contact Email or GitHub Link Here]
+* https://github.com/KoHaRxnP
